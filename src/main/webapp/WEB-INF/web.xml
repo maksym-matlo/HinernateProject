@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <servlet>
+        <servlet-name>index</servlet-name>
+        <servlet-class>com.maximalus.servlets.IndexServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>index</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>insert</servlet-name>
+        <servlet-class>com.maximalus.servlets.InsertServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>insert</servlet-name>
+        <url-pattern>/insert</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>delete</servlet-name>
+        <servlet-class>com.maximalus.servlets.DeleteServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>delete</servlet-name>
+        <url-pattern>/delete</url-pattern>
+    </servlet-mapping>
+</web-app>
